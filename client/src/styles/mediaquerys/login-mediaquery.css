@@ -9,15 +9,15 @@
     }
 
     #username, #pass{
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 25px;
         width: 60%;
     }
 
     #login-button{
-        font-size: 2em;
-        width: 40%;
-        height: 60px;
+        font-size: 1.4em;
+        width: 30%;
+        height: 50px;
         }
 }
 

@@ -61,16 +61,16 @@ const Grid_Produtos = ({products, setProducts, setOnEdit, getProducts, getExits,
                     <th className="th_products -short">
                         Código
                     </th>
-                    <th className="th_products -medium">
+                    <th className="th_products -medium -pc">
                         NF-e
                     </th>
-                    <th className="th_products -large">
+                    <th className="th_products -large -pc">
                         Chave_Acesso
                     </th>
-                    <th className="th_products -large">
+                    <th className="th_products -large -pc">
                         Cnpj_Emitente
                     </th>
-                    <th className="th_products -large">
+                    <th className="th_products -large -pc">
                         Emitente
                     </th>
                     <th className="th_products -large">
@@ -82,10 +82,10 @@ const Grid_Produtos = ({products, setProducts, setOnEdit, getProducts, getExits,
                     <th className="th_products -medium">
                         Quantidade
                     </th>
-                    <th className="th_products -large">
+                    <th className="th_products -large -pc">
                         Data de Entrada
                     </th>
-                    <th className="th_products -medium">
+                    <th className="th_products -medium -pc">
                         Avaria
                     </th>
                 </tr>
@@ -94,15 +94,15 @@ const Grid_Produtos = ({products, setProducts, setOnEdit, getProducts, getExits,
                 {products.map((item, i) => (
                     <tr key={i}>
                         <td className="td_products">{item.codigo}</td>
-                        <td className="td_products">{item.nfe}</td>
-                        <td className="td_products">{item.chave_de_acesso_nfe}</td>
-                        <td className="td_products">{item.cnpj_emitente_nfe}</td>
-                        <td className="td_products">{item.emitente_nfe}</td>
+                        <td className="td_products -pc">{item.nfe}</td>
+                        <td className="td_products -pc">{item.chave_de_acesso_nfe}</td>
+                        <td className="td_products -pc">{item.cnpj_emitente_nfe}</td>
+                        <td className="td_products -pc">{item.emitente_nfe}</td>
                         <td className="td_products">{item.descricao}</td>
                         <td className="td_products">{item.preco}</td>
                         <td className="td_products">{item.quantidade}</td>
-                        <td className="td_products">{item.data_de_entrada}</td>
-                        <td className="td_products">{item.avaria}</td>
+                        <td className="td_products -pc">{item.data_de_entrada}</td>
+                        <td className="td_products -pc">{item.avaria}</td>
                         <td className="icon_exits">
                             <FaEdit onClick={() => handleEdit(item)}/>
                         </td>

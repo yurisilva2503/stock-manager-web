@@ -1,3 +1,26 @@
+@media screen and (min-width: 300px) and (max-width: 992px){
+    .th_exits.-pc{
+        display: none;
+    }
+
+    .th_exits.-large{
+        width: 100px;
+    }
+
+    .th_exits.-medium{
+        width: 100px;
+    }
+
+    .th_exits.-short{
+        width: 100px;
+    }
+
+    .td_exits.-pc{
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 1400px) and (max-width: 1920px){
     .th_exits.-large{
         width: 300px;

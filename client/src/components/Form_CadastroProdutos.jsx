@@ -48,13 +48,6 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
         const newValue = value.replace(/[^\d/]/g, "");
     };
 
-
-    const handleTextInput = (e) => {
-        const { value } = e.target;
-        const newValue = value.replace(/[^a-zA-Z\s]/g, ""); 
-        e.target.value = newValue;
-    };
-
     const handleSubmit = async (e) =>{
         e.preventDefault();
 
@@ -134,7 +127,7 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Emitente (NF-e)</label>
-                        <input maxLength="255" className="input-tables" name="emitente_nfe" id="emitente_nfe" placeholder="Ex: Miriade" onInput={handleTextInput}></input>
+                        <input maxLength="255" className="input-tables" name="emitente_nfe" id="emitente_nfe" placeholder="Ex: Miriade"></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Descrição</label>

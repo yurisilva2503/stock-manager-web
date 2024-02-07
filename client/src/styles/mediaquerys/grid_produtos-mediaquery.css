@@ -1,3 +1,26 @@
+@media screen and (min-width: 300px) and (max-width: 992px){
+    .th_products.-pc{
+        display: none;
+    }
+
+    .th_products.-large{
+        width: 100px;
+    }
+
+    .th_products.-medium{
+        width: 100px;
+    }
+
+    .th_products.-short{
+        width: 100px;
+    }
+
+    .td_products.-pc{
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 1400px) and (max-width: 1920px){
     .th_products.-large{
         width: 300px;

@@ -51,16 +51,16 @@ const Grid_Saidas = ({exits, setExits, getExits, getProducts, setProducts}) => {
                     <th className="th_exits -short">
                         Código
                     </th>
-                    <th className="th_exits -medium">
+                    <th className="th_exits -medium -pc">
                         NF-e
                     </th>
-                    <th className="th_exits -large">
+                    <th className="th_exits -large -pc">
                         Chave_Acesso
                     </th>
-                    <th className="th_exits -large">
+                    <th className="th_exits -large -pc">
                         Cnpj_Emitente
                     </th>
-                    <th className="th_exits -medium">
+                    <th className="th_exits -medium -pc">
                         Emitente
                     </th>
                     <th className="th_exits -large">
@@ -72,13 +72,13 @@ const Grid_Saidas = ({exits, setExits, getExits, getProducts, setProducts}) => {
                     <th className="th_exits -large">
                         Quantidade
                     </th>
-                    <th className="th_exits -large">
+                    <th className="th_exits -large -pc">
                         Data de Entrada
                     </th>
-                    <th className="th_exits -large">
+                    <th className="th_exits -large -pc">
                         Data de Saída
                     </th>
-                    <th className="th_exits -medium">
+                    <th className="th_exits -medium -pc">
                         Avaria
                     </th>
                 </tr>
@@ -87,16 +87,16 @@ const Grid_Saidas = ({exits, setExits, getExits, getProducts, setProducts}) => {
                 {exits.map((item, i) => (
                     <tr key={i}>
                         <td className="td_exits">{item.codigo}</td>
-                        <td className="td_exits">{item.nfe}</td>
-                        <td className="td_exits">{item.chave_de_acesso_nfe}</td>
-                        <td className="td_exits">{item.cnpj_emitente_nfe}</td>
-                        <td className="td_exits">{item.emitente_nfe}</td>
+                        <td className="td_exits -pc">{item.nfe}</td>
+                        <td className="td_exits -pc">{item.chave_de_acesso_nfe}</td>
+                        <td className="td_exits -pc">{item.cnpj_emitente_nfe}</td>
+                        <td className="td_exits -pc">{item.emitente_nfe}</td>
                         <td className="td_exits">{item.descricao}</td>
                         <td className="td_exits">{item.preco}</td>
                         <td className="td_exits">{item.quantidade}</td>
-                        <td className="td_exits">{item.data_de_entrada}</td>
-                        <td className="td_exits">{item.data_de_saida}</td>
-                        <td className="td_exits">{item.avaria}</td>
+                        <td className="td_exits -pc">{item.data_de_entrada}</td>
+                        <td className="td_exits -pc">{item.data_de_saida}</td>
+                        <td className="td_exits -pc">{item.avaria}</td>
                         <td className="icon_exits">
                             <FaTrash onClick={() => handleDelete_exits(item.id)}/>
                         </td>
