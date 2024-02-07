@@ -20,7 +20,7 @@ O PyStock foi desenvolvido utilizando as seguintes tecnologias:
 
 - **Frontend:** React + Vite
 - **Backend:** Node.js + Express + Nodemon
-- **Banco de Dados:** PostgreSQL
+- **Banco de Dados:** MySQL
 - **Integração:** CORS
 
 ## Instruções de Uso 📝
