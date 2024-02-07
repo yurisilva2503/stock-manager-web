@@ -1,0 +1,55 @@
+@media screen and (min-width: 300px) and (max-width: 992px){
+    .main-about{
+        overflow: hidden;
+    }
+
+    .subtitle{
+        font-size: 1.2em;
+    }
+
+    .large_icon{
+        visibility: hidden;
+    }
+
+    .paragraph_container{
+        font-size: 0.5em;
+    }
+
+    .origin-paragraph{
+        display: block;
+    }
+
+    .paragraph_title.-bgblack{
+        font-size: 1.2em;
+    }
+
+    .paragraph_text.-bgblack{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .a_button{
+        font-size: 1.2em;
+    }
+
+    .subtitle{
+        font-size: 2.5em;
+    }
+
+    .paragraph_container{
+        font-size: 1.1em;
+    }
+
+    .paragraph_title.-bgblack{
+        font-size: 2.5em;
+    }
+
+    .paragraph_text.-bgblack{
+        font-size: 1.35em;
+    }
+
+    .large_icon{
+        width: 380px;
+    }
+}

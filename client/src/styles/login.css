@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container {
+	background: linear-gradient(to top, #ffffff48, #ffffff83);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+    width: 30%;
+
+    border-radius: 10px;
+
+    transition: 2s ease-in-out;
+}
+
+.logo-login {
+	width: 65%;
+	margin-bottom: 20px;
+}
+
+.form-container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-container_login{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.credentials-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#username, #pass {
+    display: inherit;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: 1em;
+
+    border: none;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+	padding: 10px 10px;
+	
+	box-shadow: 0 0 5px #0000004d;
+}
+
+#login-button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 35px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#login-button:hover{
+    transform: scale(1.01);
+    background-color: #000000d2;
+}

@@ -1,0 +1,31 @@
+@media screen and (min-width: 300px) and (max-width: 992px){
+
+    .form-container_tables{
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .title-tableform{
+        font-size: 2.8em;
+    }
+
+    .label-tables{
+        font-size: 1.3em;
+    }
+
+    .input-tables{
+        font-size: 1.3em;
+    }
+
+    .save-button{
+        font-size: 1.3em;
+    }
+
+    .input-container_tables{
+        justify-content: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}

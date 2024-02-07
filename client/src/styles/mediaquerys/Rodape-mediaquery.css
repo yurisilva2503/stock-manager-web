@@ -1,0 +1,9 @@
+@media screen and (min-width: 1400px) and (max-width: 1920px){   
+    .footer{
+            font-size: 0.7em;
+    }
+    
+    .footer-icon{
+            width: 28px;
+    } 
+}

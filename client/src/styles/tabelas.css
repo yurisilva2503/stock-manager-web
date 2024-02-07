@@ -1,0 +1,12 @@
+.space_middle{
+    content: '';
+    display: block;
+    width: 97%;
+    border: 1px dashed #000000bb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tables-container{
+    margin-bottom: 100px;
+}

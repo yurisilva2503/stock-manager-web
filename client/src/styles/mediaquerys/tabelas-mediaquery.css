@@ -1,0 +1,9 @@
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .space_footer{
+        height: 100px;
+    }
+    .space_middle{
+        margin-top: 95px;
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 300px) and (max-width: 992px){
+    .main-wrapper .logo{
+        width: 65%;
+    }
+    .a_button{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .main-wrapper .logo{
+        width: 25%;
+    }
+
+    .a_button{
+        font-size: 1.2em;
+    }
+
+    .a_button.-bgblack{
+        font-size: 1.4em;
+    }
+}
+

@@ -1,0 +1,21 @@
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .th_exits.-large{
+        width: 300px;
+    }
+    
+    .th_exits.-medium{
+        width: 200px;
+    }
+    
+    .th_exits.-short{
+        width: 100px;
+    }
+
+    .td_exits{
+        font-size: 1em;
+    }
+
+    .th_exits{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-tables{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.title-tableform{
+    display: flex;
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-container_tables{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-tables{
+  padding: 0 10px;
+  width: 90%;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.label-tables{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.button-container_tables{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.save-button{
+  padding: 10px 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.save-button:hover{
+    background-color: #2ace01;
+    transform: scale(1.04);
+}
+
+.input-container_tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+

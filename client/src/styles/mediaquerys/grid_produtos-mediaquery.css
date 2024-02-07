@@ -1,0 +1,21 @@
+@media screen and (min-width: 1400px) and (max-width: 1920px){
+    .th_products.-large{
+        width: 300px;
+    }
+    
+    .th_products.-medium{
+        width: 200px;
+    }
+    
+    .th_products.-short{
+        width: 100px;
+    }
+
+    .td_products{
+        font-size: 1em;
+    }
+
+    .th_produtos{
+        font-size: 1em;
+    }
+}
