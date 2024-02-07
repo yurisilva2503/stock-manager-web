@@ -37,6 +37,24 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
         document.getElementById("avaria").value = "";
     }
 
+    const handleNumberInput = (e) => {
+        const { value } = e.target;
+        const newValue = value.replace(/[^\d.,-]/g, ""); 
+        e.target.value = newValue;
+    };
+
+    const handleDateInput = (e) => {
+        const { value } = e.target;
+        const newValue = value.replace(/[^\d/]/g, "");
+    };
+
+
+    const handleTextInput = (e) => {
+        const { value } = e.target;
+        const newValue = value.replace(/[^a-zA-Z\s]/g, ""); 
+        e.target.value = newValue;
+    };
+
     const handleSubmit = async (e) =>{
         e.preventDefault();
 
@@ -100,23 +118,23 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                 <div className="input-container_tables">
                     <div className="input-area">
                         <label className="label-tables">Código do Produto</label>
-                        <input maxLength="14" className="input-tables" name="codigo" id="codigo" placeholder="Máx. 14 digitos"></input>
+                        <input maxLength="14" className="input-tables" name="codigo" id="codigo" placeholder="Máx. 14 digitos" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">NF-e</label>
-                        <input maxLength="9" className="input-tables" name="nfe" id="nfe" placeholder="Máx. 9 digitos"></input>
+                        <input maxLength="9" className="input-tables" name="nfe" id="nfe" placeholder="Máx. 9 digitos" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Chave de Acesso (NF-e)</label>
-                        <input maxLength="40" className="input-tables" name="chave_de_acesso_nfe" id="chave_de_acesso_nfe" placeholder="Máx. 40 digitos"></input>
+                        <input maxLength="40" className="input-tables" name="chave_de_acesso_nfe" id="chave_de_acesso_nfe" placeholder="Máx. 40 digitos" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Cnpj Emitente (NF-e)</label>
-                        <input maxLength="14" className="input-tables" name="cnpj_emitente_nfe" id="cnpj_emitente_nfe" placeholder="Máx. 14 digitos"></input>
+                        <input maxLength="14" className="input-tables" name="cnpj_emitente_nfe" id="cnpj_emitente_nfe" placeholder="Máx. 14 digitos" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Emitente (NF-e)</label>
-                        <input maxLength="255" className="input-tables" name="emitente_nfe" id="emitente_nfe" placeholder="Ex: Miriade"></input>
+                        <input maxLength="255" className="input-tables" name="emitente_nfe" id="emitente_nfe" placeholder="Ex: Miriade" onInput={handleTextInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Descrição</label>
@@ -124,7 +142,7 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Preço</label>
-                        <input maxLength="255" className="input-tables" name="preco" id="preco" placeholder="Ex: 119.90"></input>
+                        <input maxLength="255" className="input-tables" name="preco" id="preco" placeholder="Ex: 119.90" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Quantidade</label>
@@ -132,7 +150,7 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Data de Entrada</label>
-                        <input maxLength="10" className="input-tables" name="data_de_entrada" id="data_de_entrada" placeholder="Ex: 31/01/2024"></input>
+                        <input maxLength="10" className="input-tables" name="data_de_entrada" id="data_de_entrada" placeholder="Ex: 31/01/2024" onInput={handleDateInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Avaria</label>

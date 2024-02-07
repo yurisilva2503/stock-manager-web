@@ -14,14 +14,18 @@ const Grid_Produtos = ({products, setProducts, setOnEdit, getProducts, getExits,
     };
 
     const handleDelete = async(id) =>{
-        await axios.delete("http://localhost:8800/products/delete/" + id).then(() => {
+        try {
+            const confirmDelete = window.confirm("Tem certeza que deseja excluir este produto?");
+            if (!confirmDelete) return;
+    
+            await axios.delete("http://localhost:8800/products/delete/" + id);
+            
             const newArray = products.filter ((produtos) => produtos.id !== id);
-
             setProducts(newArray);
             toast.success("Produto excluído!");
-        })
-        .catch (({data}) => toast.error (data));
-        setOnEdit(null);
+        } catch (error) {
+            console.log("Erro ao excluir o produto - ", error);
+        }
     };
 
     const handleMoveToExit = async (item) => {

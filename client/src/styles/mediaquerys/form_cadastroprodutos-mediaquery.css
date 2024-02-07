@@ -25,7 +25,9 @@
 
     .input-container_tables{
         justify-content: center;
-        margin-right: 10%;
-        margin-left: 10%;
+    }
+
+    .form-container_tables{
+        max-width: 90%;
     }
 }

@@ -10,20 +10,20 @@ import "../styles/mediaquerys/grid_saidas-mediaquery.css";
 
 const Grid_Saidas = ({exits, setExits, getExits, getProducts, setProducts}) => {
 
-    const handleEdit_exits = async(item) =>{
-        setOnEdit_exits(item);
-    };
-
     const handleDelete_exits = async(id) =>{
+        const confirmDelete = window.confirm("Tem certeza que deseja excluir a saída?");
+        if (!confirmDelete) return;
+    
         await axios.delete("http://localhost:8800/exits/delete/" + id).then(() => {
             const newArray_exits = exits.filter ((exits) => exits.id !== id);
-
+    
             setExits(newArray_exits);
             toast.success("Saída excluída!");
         })
         .catch (({data}) => toast.error (data));
-    setOnEdit_exits(null);
+        setOnEdit_exits(null);
     };
+    
 
     const handleMoveToProducts = async (item) => {
         const confirmMove = window.confirm("Tem certeza que deseja mover este produto de volta para o estoque?");

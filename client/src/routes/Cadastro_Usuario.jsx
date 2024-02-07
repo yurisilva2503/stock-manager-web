@@ -10,7 +10,7 @@ const Cadastro_Usuario = () => {
     const [perfil, setPerfil] = useState("");
 
     const cadastrarUsuario = async (e) => {
-        e.preventDefault(); // Evitar recarregar a página
+        e.preventDefault();
 
         try {
             const response = await fetch("http://localhost:8800/users/", {
@@ -27,7 +27,6 @@ const Cadastro_Usuario = () => {
 
             if (response.ok) {
                 toast.success("Usuário cadastrado com sucesso!");
-                // Limpar os campos após o cadastro
                 setNome("");
                 setSenha("");
                 setPerfil("");
@@ -49,7 +48,7 @@ const Cadastro_Usuario = () => {
                         <div className="credentials">
                             <h1 className="form-register_title">Cadastro de Usuário</h1>
                             <label className="form-register_label">Usuário</label>
-                            <input className="form-register_input" type="text" placeholder="Digite seu nome" value={nome} onChange={(e) => setNome(e.target.value)}/>
+                            <input className="form-register_input" type="text" placeholder="Digite seu usuário" value={nome} onChange={(e) => setNome(e.target.value)}/>
 
                             <label className="form-register_label">Senha</label>
                             <input className="form-register_input" type="password" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)}/>
