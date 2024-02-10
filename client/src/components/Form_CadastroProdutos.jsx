@@ -39,13 +39,13 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
 
     const handleNumberInput = (e) => {
         const { value } = e.target;
-        const newValue = value.replace(/[^\d.,-]/g, ""); 
+        const newValue = value.replace(/[^\d]/g, ""); 
         e.target.value = newValue;
     };
 
-    const handleKeyNfe= (e) => {
+    const handlePriceInput = (e) => {
         const { value } = e.target;
-        const newValue = value.replace(/[^\d]/g, ""); 
+        const newValue = value.replace(/[^\d.,]/g, ""); 
         e.target.value = newValue;
     };
 
@@ -126,7 +126,7 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Chave de Acesso (NF-e)</label>
-                        <input maxLength="40" className="input-tables" name="chave_de_acesso_nfe" id="chave_de_acesso_nfe" placeholder="Máx. 40 digitos" onInput={handleKeyNfe}></input>
+                        <input maxLength="40" className="input-tables" name="chave_de_acesso_nfe" id="chave_de_acesso_nfe" placeholder="Máx. 40 digitos" onInput={handleNumberInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Cnpj Emitente (NF-e)</label>
@@ -142,7 +142,7 @@ const Form_CadastroProdutos = ({onEdit, setOnEdit, getProducts}) =>{
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Preço</label>
-                        <input maxLength="255" className="input-tables" name="preco" id="preco" placeholder="Ex: 119.90" onInput={handleNumberInput}></input>
+                        <input maxLength="255" className="input-tables" name="preco" id="preco" placeholder="Ex: 119.90" onInput={handlePriceInput}></input>
                     </div>
                     <div className="input-area">
                         <label className="label-tables">Quantidade</label>
