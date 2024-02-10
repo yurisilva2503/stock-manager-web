@@ -1,3 +1,7 @@
+.main-tables{
+    height: 100vh;
+}
+
 .space_middle{
     content: '';
     display: block;
