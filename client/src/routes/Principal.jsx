@@ -1,11 +1,13 @@
 import React from "react";
-import "../styles/reset.css";
-import "../styles/principal.css";
-import logo from "../images/logo-pystock.png";
-import "../styles/componentes/Botoes.css";
-import "../styles/mediaquerys/principal-mediaquery.css";
 import { NavLink } from "react-router-dom";
 
+import logo from "../images/logo-pystock.png";
+
+
+import "../styles/reset.css";
+import "../styles/principal.css";
+import "../styles/componentes/Botoes.css";
+import "../styles/mediaquerys/principal-mediaquery.css";
 
 const Home = () => {
 

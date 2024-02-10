@@ -2,13 +2,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 import Form_CadastroProdutos from "../components/Form_CadastroProdutos.jsx";
 import Grid_Produtos from "../components/Grid_Produtos.jsx";
 import Grid_Saidas from "../components/Grid_Saidas.jsx";
 
-
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/Form_CadastroProdutos.css";
 import "../styles/tabelas.css";
 import "../styles/mediaquerys/tabelas-mediaquery.css";

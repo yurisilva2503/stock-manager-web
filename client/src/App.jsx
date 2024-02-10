@@ -1,7 +1,8 @@
-import "./styles/reset.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navegacao";
 import Footer from "./components/Rodape";
+
+import "./styles/reset.css";
 
 function App() {
     return (

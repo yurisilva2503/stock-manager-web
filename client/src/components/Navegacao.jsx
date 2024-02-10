@@ -2,8 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import "../styles/componentes/Botoes.css";
-import "../styles/Navegacao.css";
-import "../styles/mediaquerys/Navegacao-mediaquery.css";
+import "../styles/navegacao.css";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -13,8 +12,8 @@ const Navbar = () => {
     };
 
     return (
-        <header>
-            <nav>
+        <header className="header">
+            <nav className="nav">
                 <NavLink to="/home" activeClassName="activeLink">Home</NavLink>
                 <NavLink to="/tables" activeClassName="activeLink">Tabelas</NavLink>
                 <NavLink to="/about" activeClassName="activeLink">Sobre</NavLink>

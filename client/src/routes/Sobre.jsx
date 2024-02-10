@@ -1,5 +1,7 @@
 import React from "react";
+
 import ico_comosurgiu from "../images/ico_comosurgiu.png";
+
 import "../styles/reset.css";
 import "../styles/sobre.css";
 import "../styles/mediaquerys/sobre-mediaquery.css";

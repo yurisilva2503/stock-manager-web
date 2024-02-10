@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './app.jsx';
+import App from './App.jsx';
 import Home from './routes/Principal.jsx';
 import About from './routes/Sobre.jsx';
 import Tables from './routes/Tabelas.jsx';
