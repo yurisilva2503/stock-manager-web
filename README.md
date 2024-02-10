@@ -44,7 +44,7 @@ O PyStock foi desenvolvido utilizando as seguintes tecnologias:
 5. Acesse a aplicação no seu navegador.
 
 ## Observação 🧐
-- O schema para criação do banco de dados no mysql workbench 8.0 está na pasta schema, então é só reproduzir e alterar as credenciais da conexão no aquivo db.js na pasta server.
+- O dump para criação do schema do banco de dados no mysql workbench 8.0 está na pasta dump, então é só entrar na sua conexão padrão e executar o script. Por fim, basta alterar as credenciais da conexão no aquivo db.js na pasta server.
 
 ## Licença 📄
 
