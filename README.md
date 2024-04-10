@@ -41,7 +41,7 @@ O PyStock foi desenvolvido utilizando as seguintes tecnologias:
    cd ../server
    npm start
    ```
-5. Acesse a aplicação no seu navegador.
+5. Acesse a aplicação no seu navegador e faça login com User = admin e Password = admin.
 
 ## Observação 🧐
 - O dump para criação do schema do banco de dados no mysql workbench 8.0 está na pasta dump, então é só entrar na sua conexão padrão e executar o script. Por fim, basta alterar as credenciais da conexão no aquivo db.js na pasta server.
